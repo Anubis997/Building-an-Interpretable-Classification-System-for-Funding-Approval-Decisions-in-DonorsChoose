@@ -4,6 +4,7 @@ To assist DonorsChoose in making funding approval decisions, I Applied a Decisio
 on two different feature sets:
 
 Set 1: Categorical and numerical features + preprocessed_essay (TFIDF) + Sentiment scores (preprocessed_essay)
+
 Set 2: Categorical and numerical features + preprocessed_essay (TFIDF W2V) + Sentiment scores (preprocessed_essay)
 Conducted hyperparameter tuning using k-fold cross-validation to find the best hyperparameters, specifically:
 
