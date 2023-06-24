@@ -25,15 +25,13 @@ Plotted a probability density function (PDF) with the teacher_number_of_previous
 
 For Task 2, considered Set 1 features only and selected the features with non-zero feature importance.
 
-![DT](https://github.com/Anubis997/Supervised-Learning-models-and-Boosting-on-Donors-choose-Dataset/assets/96742087/4fc26f79-fb72-4987-b113-baee64153c78)
-
-![GBDT](https://github.com/Anubis997/Supervised-Learning-models-and-Boosting-on-Donors-choose-Dataset/assets/96742087/e96f2f84-0cda-44f6-b5d8-beb49e543b97)
-
-
-
-
 Applied a chosen model (Decision Tree, Logistic Regression, or Linear SVM) after discarding the remaining features.
 
 Performed hyperparameter tuning for the selected models
 
+Results for Decision Tree and Gradient Boosted Decision Tree respectively:
+
+![DT](https://github.com/Anubis997/Supervised-Learning-models-and-Boosting-on-Donors-choose-Dataset/assets/96742087/4fc26f79-fb72-4987-b113-baee64153c78)
+
+![GBDT](https://github.com/Anubis997/Supervised-Learning-models-and-Boosting-on-Donors-choose-Dataset/assets/96742087/e96f2f84-0cda-44f6-b5d8-beb49e543b97)
 
