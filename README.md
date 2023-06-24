@@ -1,8 +1,30 @@
 # Supervised-Learning-models-and-Boosting-on-Donors-choose-Dataset
-●	Task: Predicted the funding outcome of project proposals on the Donors choose platform, a binary classification
-task with classes “Funded” and “Not Funded”.
 
-●	Approach: Decision Trees and GBDT were used to build predictive models. A customized function was developed
- to find the optimal threshold to boost the AUC score. 
- 
-●	Results: The decision trees produced AUC scores of 0.62. GBDT boosted the AUC score to 0.8. This provided a more accurate prediction of funding outcome and decreased the application processing time by 99%.
+To assist DonorsChoose in making funding approval decisions, I Applied a Decision Tree Classifier on two different feature sets:
+
+Set 1: Categorical and numerical features + preprocessed_essay (TFIDF) + Sentiment scores (preprocessed_essay)
+Set 2: Categorical and numerical features + preprocessed_essay (TFIDF W2V) + Sentiment scores (preprocessed_essay)
+Conducted hyperparameter tuning using k-fold cross-validation to find the best hyperparameters, specifically:
+
+max_depth in the range [1, 5, 10, 50]
+min_samples_split in the range [5, 10, 100, 500]
+Plotted the performance of the model on both train data and cross-validation data for each hyperparameter using a 3D scatter plot or a heatmap.
+
+Identified the best hyperparameters that gave the maximum AUC (Area Under the ROC Curve) value.
+
+Trained the model using the best hyperparameters and evaluated its performance on the test data. Plotted the ROC curve on both the train and test data and printed the confusion matrix with predicted and original labels of the test data points.
+
+Extracted the false positive data points from the confusion matrix.
+
+Plotted a WordCloud with the words from the essay text of the false positive data points.
+
+Plotted a box plot with the price of the false positive data points.
+
+Plotted a probability density function (PDF) with the teacher_number_of_previously_posted_projects of the false positive data points.
+
+For Task 2, considered Set 1 features only and selected the features with non-zero feature importance.
+
+Applied a chosen model (Decision Tree, Logistic Regression, or Linear SVM) after discarding the remaining features.
+
+Performed hyperparameter tuning for the selected models
+
