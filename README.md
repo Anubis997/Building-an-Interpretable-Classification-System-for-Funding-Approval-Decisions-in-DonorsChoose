@@ -1,6 +1,7 @@
 # Supervised-Learning-models-and-Boosting-on-Donors-choose-Dataset
 
-To assist DonorsChoose in making funding approval decisions, I Applied a Decision Tree Classifier on two different feature sets:
+To assist DonorsChoose in making funding approval decisions, I Applied a Decision Tree Classifier and Gradient Boosted Decision Tree Classifier
+on two different feature sets:
 
 Set 1: Categorical and numerical features + preprocessed_essay (TFIDF) + Sentiment scores (preprocessed_essay)
 Set 2: Categorical and numerical features + preprocessed_essay (TFIDF W2V) + Sentiment scores (preprocessed_essay)
@@ -27,4 +28,5 @@ For Task 2, considered Set 1 features only and selected the features with non-ze
 Applied a chosen model (Decision Tree, Logistic Regression, or Linear SVM) after discarding the remaining features.
 
 Performed hyperparameter tuning for the selected models
+
 
